@@ -4,6 +4,8 @@ import java.awt.Insets;
 import javax.swing.JPanel;
  
 public class MyPanelClass extends JPanel {
+        
+
             /**
 	 * 
 	 */
@@ -21,14 +23,21 @@ public class MyPanelClass extends JPanel {
                         int width = x2 - x1;
                         int height = y2 - y1;
  
-                        //Paint the background
+//                        //Paint the background
                         g.setColor(Color.DARK_GRAY);
                         g.fillRect(x1, y1, width + 1, height + 1);
-                        //Draw a border
-                        g.setColor(Color.YELLOW);
-                        g.drawRect(x1, y1, width, height);
-                        //Draw a second border
-                        g.setColor(Color.BLUE);
-                        g.drawRect(x1+3, y1+5, width-7, height-10);
+//                        //Draw a border
+//                        g.setColor(Color.YELLOW);
+//                        g.drawRect(x1, y1, width, height);
+//                        //Draw a second border
+//                        g.setColor(Color.BLUE);
+//                        g.drawRect(x1+3, y1+5, width-7, height-10);
+//                        g.setColor(Color.WHITE);
+//                        g.drawLine(x1, y1, x2, y2);
+//                        g.setColor(Color.red);
+//                        g.drawLine(x2, y1, x1, y2);
+                        g.setColor(Color.GREEN);
+                        g.fillOval((width/2-25),(height/2-40),55, 55);
+                        
             }
 }
